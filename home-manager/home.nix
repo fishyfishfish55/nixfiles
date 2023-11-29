@@ -207,7 +207,7 @@
 
   wayland.windowManager.sway = {
     enable = true;
-    package = inputs.swayfx.packages.${pkgs.system}.default;
+    package = inputs.swayfx.packages.${pkgs.system}.default.overrideAttrs (old: { passthru.providedSessions = [ "sway" ]; } );
     config = rec {
       modifier = "Mod4";
       # Use kitty as default terminal
