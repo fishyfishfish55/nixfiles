@@ -114,6 +114,7 @@
     rust-analyzer-unwrapped
     lua-language-server
     nil
+    inputs.steam-tui.packages.${pkgs.system}.default
   ];
 
   programs.git = {

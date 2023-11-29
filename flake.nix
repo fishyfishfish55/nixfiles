@@ -20,6 +20,7 @@
     swayfx.url = "github:WillPower3309/swayfx";
     helix.url = "github:helix-editor/helix";
     eww.url = "github:elkowar/eww";
+    steam-tui.url = "github:dmadisetti/steam-tui";
 
     # Shameless plug: looking for a way to nixify your themes and make
     # everything match nicely? Try nix-colors!
@@ -35,6 +36,7 @@
     swayfx,
     helix,
     eww,
+    steam-tui,
     ...
   } @ inputs: let
     inherit (self) outputs;

@@ -268,6 +268,22 @@
     },
     "nixpkgs_4": {
       "locked": {
+        "lastModified": 1658632815,
+        "narHash": "sha256-SvrHo++2drpILSZBO8wirkzwaqCRZBXE+2OGFHEJ4yQ=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "46cf1b978133b993eacf30a3c564df29044df0e5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "master",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_5": {
+      "locked": {
         "lastModified": 1684585791,
         "narHash": "sha256-lYPboblKrchmbkGMoAcAivomiOscZCjtGxxTSCY51SM=",
         "owner": "nixos",
@@ -307,6 +323,7 @@
         "nixpkgs": "nixpkgs_3",
         "nixpkgs-unstable": "nixpkgs-unstable",
         "nur": "nur",
+        "steam-tui": "steam-tui",
         "swayfx": "swayfx"
       }
     },
@@ -357,10 +374,28 @@
         "type": "github"
       }
     },
+    "steam-tui": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_4"
+      },
+      "locked": {
+        "lastModified": 1701204674,
+        "narHash": "sha256-OPsw47u/CJmVXcXJkfw/QJgjPZnPZyUkfi/re9Na6YE=",
+        "owner": "dmadisetti",
+        "repo": "steam-tui",
+        "rev": "a57318722281d45ec1a4d5da96b9dc97de27d00d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "dmadisetti",
+        "repo": "steam-tui",
+        "type": "github"
+      }
+    },
     "swayfx": {
       "inputs": {
         "flake-compat": "flake-compat_3",
-        "nixpkgs": "nixpkgs_4"
+        "nixpkgs": "nixpkgs_5"
       },
       "locked": {
         "lastModified": 1701050261,
