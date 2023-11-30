@@ -124,7 +124,7 @@
 
   programs.kitty = {
     enable = true;
-    theme = "Tokyo Night";
+    theme = "Nord";
     shellIntegration.enableZshIntegration = true;
     font = {
     	name = "Iosevka";
@@ -143,7 +143,7 @@
     enable = true;
     package = inputs.helix.packages.${pkgs.system}.default;
     settings = {
-      theme = "tokyonight";
+      theme = "nord-night";
       editor = {
         line-number = "relative";
       	cursor-shape = {

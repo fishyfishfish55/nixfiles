@@ -95,6 +95,7 @@
     unzip
     spotify
     config.nur.repos.milahu.spotify-adblock
+    unstable.papirus-nord
   ];
 
   # Steam
