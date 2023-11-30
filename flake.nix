@@ -16,6 +16,7 @@
     hardware.url = "github:nixos/nixos-hardware";
 
     nur.url = "github:nix-community/NUR";
+    stylix.url = "github:danth/stylix";
 
     swayfx.url = "github:WillPower3309/swayfx";
     helix.url = "github:helix-editor/helix";
@@ -36,6 +37,7 @@
     swayfx,
     helix,
     eww,
+    stylix,
     steam-tui,
     ...
   } @ inputs: let
@@ -71,6 +73,7 @@
         specialArgs = {inherit inputs outputs;};
         modules = [
           nur.nixosModules.nur
+          stylix.nixosModules.stylix ./stylix/configuration.nix
           # > Our main nixos configuration file <
           ./nixos/configuration.nix
         ];
