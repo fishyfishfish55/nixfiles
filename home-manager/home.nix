@@ -49,51 +49,6 @@
     homeDirectory = "/home/genius";
   };
 
-  gtk = {
-    enable = true;
-
-    iconTheme = {
-      name = "Papirus";
-      package = pkgs.papirus-icon-theme;
-    };
-
-    theme = {
-      name = "Tokyonight-Dark-BL";
-      package = pkgs.tokyo-night-gtk;
-    };
-
-    cursorTheme = {
-      name = "Numix-Cursor";
-      package = pkgs.numix-cursor-theme;
-    };
-
-    gtk3.extraConfig = {
-      Settings = ''
-        gtk-application-prefer-dark-theme=1
-      '';
-    };
-
-    gtk4.extraConfig = {
-      Settings = ''
-        gtk-application-prefer-dark-theme=1
-      '';
-    };
-  };
-
-   dconf.settings = {
-    "org/gnome/desktop/interface" = {
-      color-scheme = "prefer-dark";
-      enable-hot-corners = false;
-    };
-     "org/gnome/desktop/background" = {
-     	picture-uri = "file:///home/genius/.local/share/backgrounds/2023-09-02-17-25-58-citypaper.jpg";
-     	picture-uri-dark = "file:///home/genius/.local/share/backgrounds/2023-09-02-17-25-58-citypaper.jpg";
-     };
-     "org/gnome/shell" = {
-       disable-user-extensions = false;
-     };
-   };
-  
   home.packages = with pkgs; [
     bat
     cava
