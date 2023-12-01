@@ -38,6 +38,6 @@
     targets = {
       helix.enable = false;
       plymouth.blackBackground = true;
-    }
+    };
   };
 }
