@@ -44,6 +44,8 @@
     };
   };
 
+  manual.manpages.enable = false;
+
   home = {
     username = "genius";
     homeDirectory = "/home/genius";
