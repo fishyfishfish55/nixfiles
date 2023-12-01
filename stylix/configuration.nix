@@ -5,7 +5,7 @@
   stylix = {
     image = /home/genius/Pictures/wallpaper/citypaper.jpg;
     polarity = "dark";
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/tokyo-night-dark.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/nord.yaml";
     cursor = {
       package = pkgs.nordzy-cursor-theme;
       name = "Nordzy-cursors";
@@ -36,7 +36,6 @@
       };
     };
     targets = {
-      helix.enable = false;
       plymouth.blackBackground = true;
     };
   };
