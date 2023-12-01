@@ -96,6 +96,7 @@
     spotify
     config.nur.repos.milahu.spotify-adblock
     unstable.papirus-nord
+    nerdfonts
   ];
 
   # Steam
