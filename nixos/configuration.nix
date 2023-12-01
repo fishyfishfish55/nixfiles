@@ -10,6 +10,7 @@
 }: {
   imports = [
     ./hardware-configuration.nix
+    outputs.nixosModules.stylix-font-fixer
     inputs.home-manager.nixosModules.home-manager
     inputs.hardware.nixosModules.common-cpu-intel
     inputs.hardware.nixosModules.common-pc-laptop
