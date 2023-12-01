@@ -99,7 +99,6 @@
       update = "sudo nixos-rebuild switch --upgrade-all --verbose --show-trace";
       musique = "mpv --config=no --quiet --vo=tct --really-quiet --lavfi-complex='[aid1]asplit[ao][a1];[a1]avectorscope=r=25:m=lissajous_xy:bc=100:gc=100:rc=75:bf=5:gf=3:rf=1:zoom=1[vo]'";
     };
-
     zplug = {
       enable = true;
       plugins = [
@@ -126,18 +125,13 @@
 
   programs.kitty = {
     enable = true;
-    theme = "Nord";
+    # theme = "Nord";
     shellIntegration.enableZshIntegration = true;
-    font = {
-    	name = "Iosevka";
-    	size = 11;
-    };
     settings = {
       hide_window_decorations = true;
       remember_window_size = false;
       initial_window_width = "80c";
       initial_window_height = "24c";
-      background_opacity = "0.95";
     };
   };
 
@@ -145,7 +139,7 @@
     enable = true;
     package = inputs.helix.packages.${pkgs.system}.default;
     settings = {
-      theme = "nord-night";
+      # theme = "nord-night";
       editor = {
         line-number = "relative";
       	cursor-shape = {
@@ -180,9 +174,15 @@
   programs.bat = {
     enable = true;
     config = {
-      pager = "less -fr";
       theme = "Nord";
     };
+  };
+
+  programs.eza = {
+    enable = true;
+    enableAliases = true;
+    git = true;
+    icons = true;
   };
 
   # Enable home-manager
