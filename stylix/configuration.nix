@@ -3,7 +3,7 @@
   ...
 }: {
   stylix = {
-    image = /home/genius/Pictures/wallpaper/citypaper.jpg;
+    image = /home/genius/Pictures/wallpaper/nord-iceberg.jpg;
     polarity = "dark";
     base16Scheme = "${pkgs.base16-schemes}/share/themes/nord.yaml";
     cursor = {
@@ -34,9 +34,6 @@
         popups = 11;
         terminal = 11;
       };
-    };
-    targets = {
-      plymouth.blackBackground = true;
     };
   };
 }
