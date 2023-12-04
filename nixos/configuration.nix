@@ -146,7 +146,7 @@
   # Enable the Desktop Environment.
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
-  # services.xserver.displayManager.sessionPackages = [ inputs.swayfx.packages.${pkgs.system}.default.overrideAttrs (old: { passthru.providedSessions = [ "sway" ]; } ) ];
+  services.xserver.displayManager.sessionPackages = [ pkgs.sway ]; # TODO: swayfx
 
   # Configure keymap in X11
   services.xserver = {
