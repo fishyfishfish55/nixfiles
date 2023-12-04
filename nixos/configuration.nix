@@ -99,6 +99,8 @@
     nerdfonts
   ];
 
+  programs.light.enable = true;
+
   # Steam
   programs.steam = {
     enable = true;
@@ -212,7 +214,7 @@
       isNormalUser = true;
       shell = pkgs.zsh;
       description = "genius";
-      extraGroups = [ "networkmanager" "wheel" "wireshark" "audio" ];
+      extraGroups = [ "networkmanager" "wheel" "wireshark" "audio" "video" ];
     };
   };
 
