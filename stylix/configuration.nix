@@ -36,16 +36,16 @@
         terminal = 11;
       };
     };
-    targets = {
-      plymouth = {
-        enable = true;
-        blackBackground = false;
-      };
-      gnome.enable = true;
-      gtk.enable = true;
-      sway.enable = true;
-      bat.enable = true;
-      fzf.enable = true;
-    };
+#     targets = {
+#       plymouth = {
+#         enable = true;
+#         blackBackground = false;
+#       };
+#       gnome.enable = true;
+#       gtk.enable = true;
+#       sway.enable = true;
+#       bat.enable = true;
+#       fzf.enable = true;
+#     };
   };
 }
