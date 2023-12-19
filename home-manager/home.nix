@@ -58,9 +58,9 @@
     reaper
     iosevka
     nerdfonts
-    obsidian
+    # unstable.obsidian
+    # discord
     libreoffice-fresh
-    discord
     mpv
     youtube-dl
     doomretro
@@ -96,7 +96,7 @@
       rf = "rm -rf";
       rd = "rmdir";
       icat = "kitty +kitten icat";
-      update = "sudo nixos-rebuild switch --upgrade-all --verbose --show-trace";
+      update = "nixos-rebuild switch --update-input nixpkgs --commit-lock-file --show-trace";
       musique = "mpv --config=no --quiet --vo=tct --really-quiet --lavfi-complex='[aid1]asplit[ao][a1];[a1]avectorscope=r=25:m=lissajous_xy:bc=100:gc=100:rc=75:bf=5:gf=3:rf=1:zoom=1[vo]'";
     };
     zplug = {
