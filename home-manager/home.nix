@@ -125,7 +125,7 @@
 
   programs.kitty = {
     enable = true;
-    # theme = "Nord";
+    theme = "Nord";
     shellIntegration.enableZshIntegration = true;
     settings = {
       hide_window_decorations = true;
@@ -139,7 +139,7 @@
     enable = true;
     package = inputs.helix.packages.${pkgs.system}.default;
     settings = {
-      # theme = "nord-night";
+      theme = "nord-night";
       editor = {
         line-number = "relative";
         cursorline = true;

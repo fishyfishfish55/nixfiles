@@ -6,7 +6,7 @@
     image = /home/genius/Pictures/wallpaper/nord-iceberg.jpg;
     polarity = "dark";
     base16Scheme = "${pkgs.base16-schemes}/share/themes/nord.yaml";
-    autoEnable = true;
+    autoEnable = false;
     cursor = {
       package = pkgs.nordzy-cursor-theme;
       name = "Nordzy-cursors";
@@ -36,16 +36,14 @@
         terminal = 11;
       };
     };
-#     targets = {
-#       plymouth = {
-#         enable = true;
-#         blackBackground = false;
-#       };
-#       gnome.enable = true;
-#       gtk.enable = true;
-#       sway.enable = true;
-#       bat.enable = true;
-#       fzf.enable = true;
-#     };
+    targets = {
+      plymouth = {
+        enable = true;
+        blackBackground = false;
+      };
+      gnome.enable = true;
+      gtk.enable = true;
+      console.enable = true;
+    };
   };
 }
