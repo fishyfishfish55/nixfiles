@@ -21,8 +21,8 @@
     swayfx.url = "github:WillPower3309/swayfx";
     helix.url = "github:helix-editor/helix";
     steam-tui.url = "github:dmadisetti/steam-tui";
-    nixpkgs-wayland.url = "github:nix-community/nixpkgs-sway";
-    nixpkgs-wayland.inputs.nixpkgs.follows = "nixpkgs";
+    # nixpkgs-wayland.url = "github:nix-community/nixpkgs-sway";
+    # nixpkgs-wayland.inputs.nixpkgs.follows = "nixpkgs";
 
   };
 
@@ -34,7 +34,7 @@
     nur,
     swayfx,
     helix,
-    nixpkgs-wayland,
+    # nixpkgs-wayland,
     stylix,
     steam-tui,
     ...
