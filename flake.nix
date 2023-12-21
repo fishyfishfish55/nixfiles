@@ -20,8 +20,9 @@
 
     swayfx.url = "github:WillPower3309/swayfx";
     helix.url = "github:helix-editor/helix";
-    eww.url = "github:elkowar/eww";
     steam-tui.url = "github:dmadisetti/steam-tui";
+    nixpkgs-wayland.url = "github:nix-community/nixpkgs-sway";
+    nixpkgs-wayland.inputs.nixpkgs.follows = "nixpkgs";
 
   };
 
@@ -33,7 +34,7 @@
     nur,
     swayfx,
     helix,
-    eww,
+    nixpkgs-wayland,
     stylix,
     steam-tui,
     ...
@@ -70,7 +71,8 @@
         specialArgs = {inherit inputs outputs;};
         modules = [
           nur.nixosModules.nur
-          stylix.nixosModules.stylix ./stylix/configuration.nix
+          stylix.nixosModules.stylix
+          ./stylix/configuration.nix
           # > Our main nixos configuration file <
           ./nixos/configuration.nix
         ];

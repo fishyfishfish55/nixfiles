@@ -201,6 +201,13 @@
     icons = true;
   };
 
+  programs.direnv = {
+    enable = true;
+    enableBashIntegration = true;
+    enableZshIntegration = true;
+    nix-direnv.enable = true;
+  };
+
   # Enable home-manager
   programs.home-manager.enable = true;
 
