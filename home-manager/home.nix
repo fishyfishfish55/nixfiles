@@ -174,6 +174,8 @@
         "*" = { natural_scroll = "enabled"; };
       };
       keybindings = lib.mkOptionDefault {
+        # Launcher
+        "${modifier}+space" = "exec fuzzel";
         # Brightness
         "XF86MonBrightnessDown" = "exec light -U 2";
         "XF86MonBrightnessUp" = "exec light -A 2";
