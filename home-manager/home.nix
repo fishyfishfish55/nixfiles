@@ -160,7 +160,7 @@
 
   wayland.windowManager.sway = {
     enable = true;
-    package = inputs.nixpkgs-wayland.sway-unwrapped;
+    package = inputs.nixpkgs-wayland.packages.${pkgs.system}.sway-unwrapped;
     config = rec {
       modifier = "Mod4";
       # Use kitty as default terminal
