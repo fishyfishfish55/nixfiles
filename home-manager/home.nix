@@ -160,7 +160,7 @@
 
   wayland.windowManager.sway = {
     enable = true;
-    # package = inputs.swayfx.packages.${pkgs.system}.default.overrideAttrs (old: { passthru.providedSessions = [ "sway" ]; } );
+    package = inputs.nixpkgs-wayland.sway-unwrapped;
     config = rec {
       modifier = "Mod4";
       # Use kitty as default terminal
@@ -174,9 +174,9 @@
         "XF86MonBrightnessDown" = "exec light -U 10";
         "XF86MonBrightnessUp" = "exec light -A 10";
          # Volume
-         "XF86AudioRaiseVolume" = "exec 'pactl set-sink-volume @DEFAULT_SINK@ +1%'";
-         "XF86AudioLowerVolume" = "exec 'pactl set-sink-volume @DEFAULT_SINK@ -1%'";
-         "XF86AudioMute" = "exec 'pactl set-sink-mute @DEFAULT_SINK@ toggle'";
+         "XF86AudioRaiseVolume" = "exec 'wpctl set-volume 52 5%+'";
+         "XF86AudioLowerVolume" = "exec 'wpctl set-volume 52 5%-'";
+         "XF86AudioMute" = "exec 'wpctl set-mute 52 toggle'";
       };
       floating.criteria = [
         {
