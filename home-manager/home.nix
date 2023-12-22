@@ -135,7 +135,7 @@
 
   programs.kitty = {
     enable = true;
-    theme = "Nord";
+    # theme = "Nord";
     shellIntegration.enableZshIntegration = true;
     settings = {
       hide_window_decorations = true;
@@ -149,7 +149,7 @@
     enable = true;
     package = inputs.helix.packages.${pkgs.system}.default;
     settings = {
-      theme = "nord-night";
+      # theme = "nord-night";
       editor = {
         line-number = "relative";
         cursorline = true;
@@ -228,22 +228,22 @@
   services.mako = {
     enable = true;
     package = inputs.nixpkgs-wayland.packages.${pkgs.system}.mako;
-    backgroundColor = "#434c5eff";
-    textColor = "#eceff4ff";
-    borderColor = "#d8dee9ff";
-    progressColor = "#ebcb8bff";
+    # backgroundColor = "#434c5eff";
+    # textColor = "#eceff4ff";
+    # borderColor = "#d8dee9ff";
+    # progressColor = "#ebcb8bff";
   };
 
   programs.fuzzel = {
     enable = true;
     settings = {
       colors = {
-        background = "434c5eff";
-        text = "eceff4ff";
-        match = "ebcb8bff";
-        selection = "d8dee9ff";
-        selection-text = "2e3440ff";
-        selection-match = "ebcb8bff";
+        # background = "434c5eff";
+        # text = "eceff4ff";
+        # match = "ebcb8bff";
+        # selection = "d8dee9ff";
+        # selection-text = "2e3440ff";
+        # selection-match = "ebcb8bff";
       };
     };
   };

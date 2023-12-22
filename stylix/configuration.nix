@@ -6,7 +6,7 @@
     image = /home/genius/Pictures/wallpaper/nord-iceberg.jpg;
     polarity = "dark";
     base16Scheme = "${pkgs.base16-schemes}/share/themes/nord.yaml";
-    autoEnable = false;
+    autoEnable = true;
     cursor = {
       package = pkgs.nordzy-cursor-theme;
       name = "Nordzy-cursors";
