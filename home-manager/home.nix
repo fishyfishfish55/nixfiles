@@ -191,6 +191,20 @@
     };
   };
 
+  programs.fuzzel = {
+    enable = true;
+    settings = {
+      colors = {
+        background = "434c5eff";
+        text = "eceff4ff";
+        match = "ebcb8bff";
+        selection = "d8dee9ff";
+        selection-text = "2e3440ff";
+        selection-match = "ebcb8bff";
+      };
+    };
+  };
+
   programs.bat = {
     enable = true;
     config = {
