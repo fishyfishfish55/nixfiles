@@ -170,6 +170,9 @@
         # Launch Firefox on start
         {command = "firefox";}
       ];
+      input = {
+        "*" = { natural_scroll = "disabled"; };
+      };
       keybindings = lib.mkOptionDefault {
         # Brightness
         "XF86MonBrightnessDown" = "exec light -U 2";
