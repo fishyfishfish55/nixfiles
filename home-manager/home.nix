@@ -205,6 +205,15 @@
     };
   };
 
+  services.mako = {
+    enable = true;
+    package = inputs.nixpkgs-wayland.packages.${pkgs.system}.mako;
+    backgroundColor = "#434c5eff";
+    textColor = "#eceff4ff";
+    borderColor = "#d8dee9ff";
+    progressColor = "#ebcb8bff";
+  };
+
   programs.fuzzel = {
     enable = true;
     settings = {
