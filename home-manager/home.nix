@@ -171,7 +171,10 @@
         {command = "firefox";}
       ];
       input = {
-        "*" = { natural_scroll = "enabled"; };
+        "*" = { 
+          natural_scroll = "enabled";
+          tap = "enabled";
+         };
       };
       keybindings = lib.mkOptionDefault {
         # Launcher
