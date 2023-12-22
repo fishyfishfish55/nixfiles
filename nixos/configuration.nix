@@ -188,6 +188,9 @@
   security.polkit.enable = true;  
   services.udev.packages = with pkgs; [ gnome.gnome-settings-daemon ];
 
+  # PAM
+  security.pam.services.swaylock = {};
+
   # Bluetooth
   hardware.bluetooth.enable = true;
 

@@ -188,6 +188,8 @@
       keybindings = lib.mkOptionDefault {
         # Launcher
         "${modifier}+space" = "exec fuzzel";
+        # Lock screen
+        "${modifier}+Shift+l" = "swaylock -fF";
         # Brightness
         "XF86MonBrightnessDown" = "exec light -U 2";
         "XF86MonBrightnessUp" = "exec light -A 2";
@@ -203,6 +205,24 @@
       ];
       window.titlebar = false;
     };
+  };
+
+  programs.swaylock = {
+    enable = true;
+    package = inputs.nixpkgs-wayland.packages.${pkgs.system}.swaylock-effects;
+  };
+
+  services.swayidle = {
+    enable = true;
+    package = inputs.nixpkgs-wayland.packages.${pkgs.system}.swayidle;
+    extraArgs = [ "-w" ]; # wait for before-sleep command to finish executing
+    events = [
+      { event = "before-sleep"; command = "${pkgs.swaylock}/bin/swaylock -fF"; }
+      { event = "after-resume"; command = "swaymsg 'output * power on'"; }
+    ];
+    timeouts = [
+      { timeout = 600; command = "swaymsg 'output * power off'"; }
+    ];
   };
 
   services.mako = {
