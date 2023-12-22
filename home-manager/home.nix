@@ -171,7 +171,7 @@
         {command = "firefox";}
       ];
       input = {
-        "*" = { natural_scroll = "disabled"; };
+        "*" = { natural_scroll = "enabled"; };
       };
       keybindings = lib.mkOptionDefault {
         # Brightness
