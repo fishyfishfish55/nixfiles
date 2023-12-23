@@ -170,7 +170,7 @@
 
   wayland.windowManager.sway = {
     enable = true;
-    package = inputs.nixpkgs-wayland.packages.${pkgs.system}.sway-unwrapped;
+    package = pkgs.unstable.swayfx-unwrapped;
     systemd.enable = true;
     config = rec {
       modifier = "Mod4";
@@ -193,6 +193,7 @@
         "${modifier}+Shift+l" = "swaylock -fF";
         "${modifier}+w" = "kill";
         "${modifier}+Shift+r" = "reload";
+        "${modifier}+Shift+f" = "floating toggle";
         # Brightness
         "XF86MonBrightnessDown" = "exec light -U 2";
         "XF86MonBrightnessUp" = "exec light -A 2";
@@ -215,6 +216,14 @@
         }      
       ];
     };
+    extraConfig = ''
+      blur enable
+      blur_passes 3
+      blur_radius 5
+      corner_radius 5
+      shadows enable
+      scratchpad_minimize enable
+    '';
   };
 
   programs.swaylock = {
