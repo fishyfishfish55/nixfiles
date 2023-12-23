@@ -191,6 +191,8 @@
         "${modifier}+space" = "exec fuzzel";
         # Lock screen
         "${modifier}+Shift+l" = "swaylock -fF";
+        "${modifier}+w" = "kill";
+        "${modifier}+Shift+r" = "reload";
         # Brightness
         "XF86MonBrightnessDown" = "exec light -U 2";
         "XF86MonBrightnessUp" = "exec light -A 2";
@@ -259,10 +261,10 @@
   programs.waybar = {
     enable = true;
     package = inputs.nixpkgs-wayland.packages.${pkgs.system}.waybar;
-    systemd = {
-      enable = true;
-      target = "sway-session.target";
-    };
+    # systemd = {
+    #   enable = true;
+    #   target = "sway-session.target";
+    # };
     settings.waybar = {
       id = "waybar";
       ipc = true;
