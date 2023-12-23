@@ -171,6 +171,7 @@
   wayland.windowManager.sway = {
     enable = true;
     package = inputs.nixpkgs-wayland.packages.${pkgs.system}.sway-unwrapped;
+    systemd.enable = true;
     config = rec {
       modifier = "Mod4";
       # Use kitty as default terminal
@@ -204,6 +205,7 @@
         }
       ];
       window.titlebar = false;
+      bars = [];
     };
   };
 
@@ -244,6 +246,26 @@
         # selection = "d8dee9ff";
         # selection-text = "2e3440ff";
         # selection-match = "ebcb8bff";
+      };
+    };
+  };
+
+  programs.waybar = {
+    enable = true;
+    package = inputs.nixpkgs-wayland.packages.${pkgs.system}.waybar;
+    systemd = {
+      enable = true;
+      target = "sway-session.target";
+    };
+    settings = {
+      waybar = {
+        # id = "waybar";
+        # ipc = true;
+        layer = "top";
+        position = "top";
+        modules-left = [ "sway/workspaces" ];
+        modules-center = [ "sway/window" ];
+        modules-right = [ "clock" "backlight" "wireplumber" "battery" "tray" ];
       };
     };
   };
