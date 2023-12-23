@@ -205,6 +205,7 @@
         }
       ];
       window.titlebar = false;
+      gaps.inner = 5;
       bars = [     
         {
           id = "waybar";
