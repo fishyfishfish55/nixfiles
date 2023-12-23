@@ -67,7 +67,7 @@
     # Helix packages
     # TODO: move to ExtraPackages
     marksman
-    rust-analyzer-unwrapped
+    rust-analyzer
     lua-language-server
     nil
     clang-tools
@@ -170,7 +170,7 @@
 
   wayland.windowManager.sway = {
     enable = true;
-    package = pkgs.unstable.swayfx-unwrapped;
+    package = pkgs.unstable.swayfx;
     systemd.enable = true;
     config = rec {
       modifier = "Mod4";
