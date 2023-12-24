@@ -102,8 +102,8 @@
       # Old nix commands - reevaluate.
       nix-channel = "echo 'whoa there, buddy.  Use flake inputs instead'";
       nix-env = "echo 'whoa there, buddy. Did you mean nix profile?'";
-      nix-shell = "echo 'whoa there, buddy. Do some research first'";
-      nix-build = "echo 'whoa there, buddy. Do some research first - check nix develop, nix shell, and nix run'";
+      nix-shell = "echo 'whoa there, buddy. Do some research first - check nix develop, nix shell, and nix run'";
+      nix-build = "echo 'whoa there, buddy. Did you mean nix build'";
       nix-collect-garbage = "echo 'whoa there, buddy. Did you mean nix store gc --debug?'";
     };
     oh-my-zsh = {
