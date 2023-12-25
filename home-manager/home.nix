@@ -287,7 +287,7 @@
       position = "top";
       modules-left = [ "sway/workspaces" ];
       modules-center = [ "sway/window" ];
-      modules-right = [ "clock" "wireplumber" "backlight" "battery" "tray" ];
+      modules-right = [ "clock" "wireplumber" "battery" "tray" ];
       "sway/workspaces" = {
         format-icons = {
           default = "○";
