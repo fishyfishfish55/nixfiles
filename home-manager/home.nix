@@ -259,6 +259,11 @@
     # progressColor = "#ebcb8bff";
   };
 
+  # Battery warning
+  services.batsignal = {
+    enable = true;
+  };
+
   programs.fuzzel = {
     enable = true;
     settings = {
