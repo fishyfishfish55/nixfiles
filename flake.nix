@@ -18,7 +18,6 @@
     nur.url = "github:nix-community/NUR";
     stylix.url = "github:danth/stylix";
 
-    swayfx.url = "github:WillPower3309/swayfx";
     helix.url = "github:helix-editor/helix";
     steam-tui.url = "github:dmadisetti/steam-tui";
     nixpkgs-wayland.url = "github:nix-community/nixpkgs-wayland";
@@ -31,7 +30,6 @@
     home-manager,
     nixos-hardware,
     nur,
-    swayfx,
     helix,
     nixpkgs-wayland,
     stylix,
