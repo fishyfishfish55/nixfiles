@@ -109,6 +109,8 @@
     unstable.papirus-nord
     nerdfonts
   ];
+  # enable man cache
+  documentation.man.generateCaches = true;
 
   programs.light.enable = true;
 
