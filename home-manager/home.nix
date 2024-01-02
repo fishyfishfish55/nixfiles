@@ -16,12 +16,12 @@
     # Or modules exported from other flakes (such as nix-colors):
     # inputs.nix-colors.homeManagerModules.default
 
-    ./cli.nix
-    ./helix.nix
-    ./zsh.nix
-    ./sway.nix
-    ./waybar.nix
-    ./desktop.nix
+    ./cli/cli.nix
+    ./cli/helix.nix
+    ./cli/zsh.nix
+    ./desktop/sway.nix
+    ./desktop/waybar.nix
+    ./desktop/desktop.nix
   ];
 
   nixpkgs = {
