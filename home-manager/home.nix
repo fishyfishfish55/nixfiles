@@ -74,7 +74,6 @@
     lua-language-server
     nil
     clang-tools
-    inputs.steam-tui.packages.${pkgs.system}.default
   ];
 
   # Enable home-manager

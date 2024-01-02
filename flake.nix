@@ -18,8 +18,6 @@
     nur.url = "github:nix-community/NUR";
     stylix.url = "github:danth/stylix";
 
-    helix.url = "github:helix-editor/helix";
-    steam-tui.url = "github:dmadisetti/steam-tui";
     nixpkgs-wayland.url = "github:nix-community/nixpkgs-wayland";
 
   };
@@ -30,10 +28,8 @@
     home-manager,
     nixos-hardware,
     nur,
-    helix,
     nixpkgs-wayland,
     stylix,
-    steam-tui,
     ...
   } @ inputs: let
     inherit (self) outputs;
