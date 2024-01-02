@@ -58,12 +58,11 @@
     reaper
     iosevka
     nerdfonts
-    # unstable.obsidian
-    # discord
     libreoffice-fresh
     mpv
     youtube-dl
     doomretro
+    autotiling
     # Helix packages
     # TODO: move to ExtraPackages
     marksman
@@ -185,6 +184,7 @@
       startup = [
         # Launch Firefox on start
         {command = "firefox";}
+        {command = "autotiling"; always = true;}
       ];
       input = {
         "*" = { 
@@ -210,7 +210,7 @@
       };
       floating.criteria = [
         {
-          class = "kitty";
+          app_id = "kitty";
         }
       ];
       window.titlebar = false;
