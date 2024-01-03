@@ -55,6 +55,7 @@
     homeDirectory = "/home/genius";
   };
 
+  # Extra packages with no config
   home.packages = with pkgs; [
     cava
     tldr
@@ -67,6 +68,7 @@
     youtube-dl
     doomretro
     autotiling
+    weechat
     # Helix packages
     # TODO: move to ExtraPackages
     marksman
