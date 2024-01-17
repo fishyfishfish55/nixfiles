@@ -18,10 +18,11 @@
 
     ./cli/cli.nix
     ./cli/helix.nix
+    ./cli/tmux.nix
     ./cli/zsh.nix
+    ./desktop/desktop.nix
     ./desktop/sway.nix
     ./desktop/waybar.nix
-    ./desktop/desktop.nix
   ];
 
   nixpkgs = {
