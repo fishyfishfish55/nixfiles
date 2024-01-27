@@ -61,4 +61,5 @@
       initial_window_height = "24c";
     };
   };
+
 }
