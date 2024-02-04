@@ -66,6 +66,7 @@
     nerdfonts
     libreoffice-fresh
     mpv
+    octave
     youtube-dl
     doomretro
     autotiling
