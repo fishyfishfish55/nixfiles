@@ -98,6 +98,7 @@
         bsnes
       	nestopia
       	genesis-plus-gx
+        dolphin
       ];
     })
     jdk17
