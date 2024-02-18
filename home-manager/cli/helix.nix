@@ -6,7 +6,7 @@
     enable = true;
     package = pkgs.unstable.helix;
     settings = {
-      # theme = "nord-night";
+      theme = "nord-night";
       editor = {
         line-number = "relative";
         cursorline = true;
