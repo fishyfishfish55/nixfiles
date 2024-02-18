@@ -16,7 +16,6 @@
     hardware.url = "github:nixos/nixos-hardware";
 
     nur.url = "github:nix-community/NUR";
-    stylix.url = "github:danth/stylix";
 
     nixpkgs-wayland.url = "github:nix-community/nixpkgs-wayland";
 
@@ -29,7 +28,6 @@
     nixos-hardware,
     nur,
     nixpkgs-wayland,
-    stylix,
     ...
   } @ inputs: let
     inherit (self) outputs;
@@ -64,8 +62,6 @@
         specialArgs = {inherit inputs outputs;};
         modules = [
           nur.nixosModules.nur
-          stylix.nixosModules.stylix
-          ./stylix/configuration.nix
           # > Our main nixos configuration file <
           ./nixos/configuration.nix
         ];
