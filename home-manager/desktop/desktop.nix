@@ -55,6 +55,7 @@
     theme = "Nord";
     shellIntegration.enableZshIntegration = true;
     settings = {
+      font_family = "Iosevka";
       hide_window_decorations = true;
       remember_window_size = false;
       initial_window_width = "80c";

@@ -171,6 +171,11 @@
     xkbVariant = "";
   };
 
+  virtualisation.podman = {
+    enable = true;
+    defaultNetwork.settings.dns_enabled = true;  
+  };
+
   # Bootloader stuff
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
